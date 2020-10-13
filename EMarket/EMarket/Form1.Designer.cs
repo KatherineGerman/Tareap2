@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.mzButtonWindows2 = new BWCMM.MZButtonWindows();
-            this.mzButtonWindows3 = new BWCMM.MZButtonWindows();
-            this.mzButtonWindows1 = new BWCMM.MZButtonWindows();
+            
             this.btnMantP = new System.Windows.Forms.Button();
             this.btnListP = new System.Windows.Forms.Button();
             this.btnCat = new System.Windows.Forms.Button();
@@ -44,52 +42,13 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.DarkOrange;
-            this.panel1.Controls.Add(this.mzButtonWindows2);
-            this.panel1.Controls.Add(this.mzButtonWindows3);
-            this.panel1.Controls.Add(this.mzButtonWindows1);
+            
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1048, 36);
             this.panel1.TabIndex = 7;
             // 
-            // mzButtonWindows2
-            // 
-            this.mzButtonWindows2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mzButtonWindows2.BackgroundImage")));
-            this.mzButtonWindows2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.mzButtonWindows2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mzButtonWindows2.EstiloButton = BWCMM.MZButtonWindows.EstiloDeButton.Mac;
-            this.mzButtonWindows2.Location = new System.Drawing.Point(53, 3);
-            this.mzButtonWindows2.Name = "mzButtonWindows2";
-            this.mzButtonWindows2.ParentControl = this;
-            this.mzButtonWindows2.Size = new System.Drawing.Size(20, 20);
-            this.mzButtonWindows2.TabIndex = 8;
-            this.mzButtonWindows2.TipoButton = BWCMM.MZButtonWindows.ModeButton.Minimize;
-            // 
-            // mzButtonWindows3
-            // 
-            this.mzButtonWindows3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mzButtonWindows3.BackgroundImage")));
-            this.mzButtonWindows3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.mzButtonWindows3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mzButtonWindows3.EstiloButton = BWCMM.MZButtonWindows.EstiloDeButton.Mac;
-            this.mzButtonWindows3.Location = new System.Drawing.Point(28, 3);
-            this.mzButtonWindows3.Name = "mzButtonWindows3";
-            this.mzButtonWindows3.ParentControl = this;
-            this.mzButtonWindows3.Size = new System.Drawing.Size(20, 20);
-            this.mzButtonWindows3.TabIndex = 9;
-            this.mzButtonWindows3.TipoButton = BWCMM.MZButtonWindows.ModeButton.Maximize;
-            // 
-            // mzButtonWindows1
-            // 
-            this.mzButtonWindows1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mzButtonWindows1.BackgroundImage")));
-            this.mzButtonWindows1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.mzButtonWindows1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.mzButtonWindows1.EstiloButton = BWCMM.MZButtonWindows.EstiloDeButton.Mac;
-            this.mzButtonWindows1.Location = new System.Drawing.Point(3, 3);
-            this.mzButtonWindows1.Name = "mzButtonWindows1";
-            this.mzButtonWindows1.ParentControl = this;
-            this.mzButtonWindows1.Size = new System.Drawing.Size(20, 20);
-            this.mzButtonWindows1.TabIndex = 0;
-            this.mzButtonWindows1.TipoButton = BWCMM.MZButtonWindows.ModeButton.Close;
+            
             // 
             // btnMantP
             // 
@@ -170,9 +129,8 @@
         private System.Windows.Forms.Button btnMantP;
         private System.Windows.Forms.Button btnListP;
         private System.Windows.Forms.Button btnCat;
-        private BWCMM.MZButtonWindows mzButtonWindows1;
-        private BWCMM.MZButtonWindows mzButtonWindows2;
-        private BWCMM.MZButtonWindows mzButtonWindows3;
+       
+      
     }
 }
 
