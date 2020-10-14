@@ -10,10 +10,16 @@ using System.Windows.Forms;
 using EMarket.Vista;
 using System.Runtime.InteropServices;
 
+using EMarket.Controlador;
+
 namespace EMarket
 {
     public partial class Form1 : Form
     {
+        
+        
+            
+        
         public Form1()
         {
             InitializeComponent();
@@ -78,5 +84,15 @@ namespace EMarket
 		{
             AbrirForm<ProductoVista>();
 		}
+
+		private void panelFormulario_Paint(object sender, PaintEventArgs e)
+		{
+
+		}
+
+        private void ViewProducts()
+        {
+
+        }
 	}
 }
