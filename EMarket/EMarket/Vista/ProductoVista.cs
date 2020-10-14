@@ -43,6 +43,7 @@ namespace EMarket.Vista
 			description = txtdescription.Text;
 
 			gvproducts.DataSource = productoP.Mostrar(id,code,name,stock,expired,category,state,description);
+			
 		}
 
         private void btnupdate_Click(object sender, EventArgs e)
@@ -62,7 +63,7 @@ namespace EMarket.Vista
 
 			}
             else
-                MessageBox.Show("Plase, select a row to edit");
+                MessageBox.Show("Please, select a row to edit");
         }
 
         private void btndelete_Click(object sender, EventArgs e)
@@ -72,7 +73,22 @@ namespace EMarket.Vista
 				gvproducts.Rows.RemoveAt(this.gvproducts.SelectedRows[0].Index);
             }
 			else
-				MessageBox.Show("Plase, select a row to delete");
+				MessageBox.Show("Please, select a row to delete");
 		}
-    }
+
+		private void txtcode_TextChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void cbstate_SelectedIndexChanged(object sender, EventArgs e)
+		{
+
+		}
+
+		private void txtsearch_TextChanged(object sender, EventArgs e)
+		{
+			
+		}
+	}
 }
