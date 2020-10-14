@@ -30,12 +30,12 @@
         {
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.panelFormulario = new System.Windows.Forms.Panel();
-			this.btnupdate = new System.Windows.Forms.Button();
-			this.btndelete = new System.Windows.Forms.Button();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.label1 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
+			this.btnupdate = new System.Windows.Forms.Button();
+			this.btndelete = new System.Windows.Forms.Button();
 			this.button2 = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
 			this.panelFormulario.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -63,6 +63,31 @@
 			this.panelFormulario.Name = "panelFormulario";
 			this.panelFormulario.Size = new System.Drawing.Size(779, 499);
 			this.panelFormulario.TabIndex = 5;
+			// 
+			// dataGridView1
+			// 
+			this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+			this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(91)))));
+			this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Location = new System.Drawing.Point(9, 96);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.Size = new System.Drawing.Size(761, 327);
+			this.dataGridView1.TabIndex = 6;
+			// 
+			// label1
+			// 
+			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+			this.label1.AutoSize = true;
+			this.label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+			this.label1.Location = new System.Drawing.Point(212, 18);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(256, 42);
+			this.label1.TabIndex = 5;
+			this.label1.Text = "Stock Product";
 			// 
 			// btnupdate
 			// 
@@ -101,30 +126,20 @@
 			this.btndelete.Text = "Delete";
 			this.btndelete.UseVisualStyleBackColor = true;
 			// 
-			// dataGridView1
+			// button2
 			// 
-			this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(91)))));
-			this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.dataGridView1.Location = new System.Drawing.Point(9, 96);
-			this.dataGridView1.Name = "dataGridView1";
-			this.dataGridView1.Size = new System.Drawing.Size(761, 327);
-			this.dataGridView1.TabIndex = 6;
-			// 
-			// label1
-			// 
-			this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-			this.label1.AutoSize = true;
-			this.label1.Font = new System.Drawing.Font("Century Gothic", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-			this.label1.Location = new System.Drawing.Point(212, 18);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(256, 42);
-			this.label1.TabIndex = 5;
-			this.label1.Text = "Stock Product";
+			this.button2.BackgroundImage = global::EMarket.Properties.Resources.products;
+			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+			this.button2.FlatAppearance.BorderSize = 0;
+			this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(81)))));
+			this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
+			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button2.Location = new System.Drawing.Point(0, 44);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(266, 70);
+			this.button2.TabIndex = 3;
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
 			// 
 			// button1
 			// 
@@ -140,20 +155,6 @@
 			this.button1.TabIndex = 2;
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// button2
-			// 
-			this.button2.BackgroundImage = global::EMarket.Properties.Resources.products;
-			this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-			this.button2.FlatAppearance.BorderSize = 0;
-			this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(36)))), ((int)(((byte)(81)))));
-			this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DimGray;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.Location = new System.Drawing.Point(0, 44);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(266, 70);
-			this.button2.TabIndex = 3;
-			this.button2.UseVisualStyleBackColor = true;
 			// 
 			// Form1
 			// 

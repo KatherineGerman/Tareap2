@@ -94,6 +94,9 @@
     <EmbeddedResource Include="Vista\CategoriaVista.resx">
       <DependentUpon>CategoriaVista.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Vista\ProductoVista.resx">
+      <DependentUpon>ProductoVista.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
