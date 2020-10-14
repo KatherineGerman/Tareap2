@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EMarket.Vista;
+using System.Runtime.InteropServices;
 
 namespace EMarket
 {
@@ -36,5 +38,40 @@ namespace EMarket
 		{
 
 		}
+
+        
+
+        private void AbrirForm<MiForm>() where MiForm : Form, new()
+        {
+            Form formulario;
+            formulario = panelFormulario.Controls.OfType<MiForm>().FirstOrDefault();//Busca en la conexion el formulario
+            //Si el formulario no existe
+            if (formulario == null)
+            {
+                formulario = new MiForm();
+                formulario.TopLevel = false;
+                formulario.FormBorderStyle = FormBorderStyle.None;
+                formulario.Dock = DockStyle.Fill;
+                panelFormulario.Controls.Add(formulario);
+                panelFormulario.Tag = formulario;
+                formulario.Show();
+                formulario.BringToFront();
+            }//si  el formulario ya existe
+            else
+            {
+                formulario.BringToFront();
+            }
+        }
+
+		private void btncategories_Paint(object sender, PaintEventArgs e)
+		{
+            
+
+        }
+
+		private void button1_Click(object sender, EventArgs e)
+		{
+            AbrirForm<CategoriaVista>();
+        }
 	}
 }

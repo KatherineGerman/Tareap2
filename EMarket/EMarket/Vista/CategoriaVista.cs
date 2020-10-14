@@ -16,5 +16,10 @@ namespace EMarket.Vista
         {
             InitializeComponent();
         }
-    }
+
+		private void button5_Click(object sender, EventArgs e)
+		{
+            this.Close();
+        }
+	}
 }
