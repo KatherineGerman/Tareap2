@@ -8,5 +8,15 @@ namespace EMarket.Modelo
 {
     class CategoriaModelo
     {
+        public CategoriaModelo(int idCategoria, int nombre, int estado)
+        {
+            IdCategoria = idCategoria;
+            Nombre = nombre;
+            Estado = estado;
+        }
+
+        public int IdCategoria { get; set; }
+        public int Nombre { get; set; }
+        public int Estado { get; set; }
     }
 }
