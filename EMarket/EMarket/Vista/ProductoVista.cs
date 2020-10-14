@@ -26,5 +26,10 @@ namespace EMarket.Vista
 		{
 			this.Close();
 		}
+
+		private void btnsave_Click(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }

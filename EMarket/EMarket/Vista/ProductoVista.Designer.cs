@@ -36,15 +36,15 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.gvproducts = new System.Windows.Forms.DataGridView();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.btnsave = new System.Windows.Forms.Button();
+			this.cbstate = new System.Windows.Forms.ComboBox();
+			this.dtpexpired = new System.Windows.Forms.DateTimePicker();
+			this.txtcode = new System.Windows.Forms.TextBox();
+			this.txtname = new System.Windows.Forms.TextBox();
+			this.txtstock = new System.Windows.Forms.TextBox();
 			this.txtdescription = new System.Windows.Forms.TextBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.textBox2 = new System.Windows.Forms.TextBox();
-			this.textBox4 = new System.Windows.Forms.TextBox();
-			this.textBox5 = new System.Windows.Forms.TextBox();
-			this.textBox6 = new System.Windows.Forms.TextBox();
-			this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.txtcategory = new System.Windows.Forms.TextBox();
+			this.btnsave = new System.Windows.Forms.Button();
+			this.txtid = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.gvproducts)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
@@ -160,15 +160,15 @@
 			// groupBox1
 			// 
 			this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.groupBox1.Controls.Add(this.comboBox1);
-			this.groupBox1.Controls.Add(this.dateTimePicker1);
-			this.groupBox1.Controls.Add(this.textBox6);
-			this.groupBox1.Controls.Add(this.textBox5);
-			this.groupBox1.Controls.Add(this.textBox4);
-			this.groupBox1.Controls.Add(this.textBox2);
-			this.groupBox1.Controls.Add(this.textBox1);
-			this.groupBox1.Controls.Add(this.btnsave);
+			this.groupBox1.Controls.Add(this.cbstate);
+			this.groupBox1.Controls.Add(this.dtpexpired);
+			this.groupBox1.Controls.Add(this.txtcode);
+			this.groupBox1.Controls.Add(this.txtname);
+			this.groupBox1.Controls.Add(this.txtstock);
 			this.groupBox1.Controls.Add(this.txtdescription);
+			this.groupBox1.Controls.Add(this.txtcategory);
+			this.groupBox1.Controls.Add(this.btnsave);
+			this.groupBox1.Controls.Add(this.txtid);
 			this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(56)))));
@@ -178,6 +178,78 @@
 			this.groupBox1.TabIndex = 34;
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "Products registration";
+			// 
+			// cbstate
+			// 
+			this.cbstate.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+			this.cbstate.ForeColor = System.Drawing.Color.Silver;
+			this.cbstate.FormattingEnabled = true;
+			this.cbstate.Items.AddRange(new object[] {
+            "Available",
+            "Unavailable"});
+			this.cbstate.Location = new System.Drawing.Point(6, 229);
+			this.cbstate.Name = "cbstate";
+			this.cbstate.Size = new System.Drawing.Size(303, 30);
+			this.cbstate.TabIndex = 27;
+			this.cbstate.Text = "State";
+			// 
+			// dtpexpired
+			// 
+			this.dtpexpired.Location = new System.Drawing.Point(93, 135);
+			this.dtpexpired.Name = "dtpexpired";
+			this.dtpexpired.Size = new System.Drawing.Size(217, 27);
+			this.dtpexpired.TabIndex = 26;
+			// 
+			// txtcode
+			// 
+			this.txtcode.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtcode.ForeColor = System.Drawing.Color.Silver;
+			this.txtcode.Location = new System.Drawing.Point(132, 46);
+			this.txtcode.Name = "txtcode";
+			this.txtcode.Size = new System.Drawing.Size(178, 31);
+			this.txtcode.TabIndex = 25;
+			this.txtcode.Text = "code";
+			// 
+			// txtname
+			// 
+			this.txtname.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtname.ForeColor = System.Drawing.Color.Silver;
+			this.txtname.Location = new System.Drawing.Point(7, 83);
+			this.txtname.Name = "txtname";
+			this.txtname.Size = new System.Drawing.Size(304, 31);
+			this.txtname.TabIndex = 24;
+			this.txtname.Text = "Product Name";
+			// 
+			// txtstock
+			// 
+			this.txtstock.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtstock.ForeColor = System.Drawing.Color.Silver;
+			this.txtstock.Location = new System.Drawing.Point(7, 131);
+			this.txtstock.Name = "txtstock";
+			this.txtstock.Size = new System.Drawing.Size(80, 31);
+			this.txtstock.TabIndex = 23;
+			this.txtstock.Text = "stock";
+			// 
+			// txtdescription
+			// 
+			this.txtdescription.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtdescription.ForeColor = System.Drawing.Color.Silver;
+			this.txtdescription.Location = new System.Drawing.Point(7, 282);
+			this.txtdescription.Multiline = true;
+			this.txtdescription.Name = "txtdescription";
+			this.txtdescription.Size = new System.Drawing.Size(304, 80);
+			this.txtdescription.TabIndex = 21;
+			this.txtdescription.Text = "Description";
+			// 
+			// txtcategory
+			// 
+			this.txtcategory.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtcategory.ForeColor = System.Drawing.Color.Silver;
+			this.txtcategory.Location = new System.Drawing.Point(6, 180);
+			this.txtcategory.Name = "txtcategory";
+			this.txtcategory.Size = new System.Drawing.Size(304, 31);
+			this.txtcategory.TabIndex = 20;
+			this.txtcategory.Text = "Category";
 			// 
 			// btnsave
 			// 
@@ -195,88 +267,17 @@
 			this.btnsave.TabIndex = 19;
 			this.btnsave.Text = "Save Product";
 			this.btnsave.UseVisualStyleBackColor = true;
+			this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
 			// 
-			// txtdescription
+			// txtid
 			// 
-			this.txtdescription.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.txtdescription.ForeColor = System.Drawing.Color.Silver;
-			this.txtdescription.Location = new System.Drawing.Point(6, 46);
-			this.txtdescription.Name = "txtdescription";
-			this.txtdescription.Size = new System.Drawing.Size(109, 31);
-			this.txtdescription.TabIndex = 15;
-			this.txtdescription.Text = "ID";
-			// 
-			// textBox1
-			// 
-			this.textBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox1.ForeColor = System.Drawing.Color.Silver;
-			this.textBox1.Location = new System.Drawing.Point(6, 180);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(304, 31);
-			this.textBox1.TabIndex = 20;
-			this.textBox1.Text = "Category";
-			// 
-			// textBox2
-			// 
-			this.textBox2.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox2.ForeColor = System.Drawing.Color.Silver;
-			this.textBox2.Location = new System.Drawing.Point(7, 282);
-			this.textBox2.Multiline = true;
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(304, 80);
-			this.textBox2.TabIndex = 21;
-			this.textBox2.Text = "Description";
-			// 
-			// textBox4
-			// 
-			this.textBox4.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox4.ForeColor = System.Drawing.Color.Silver;
-			this.textBox4.Location = new System.Drawing.Point(7, 131);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(80, 31);
-			this.textBox4.TabIndex = 23;
-			this.textBox4.Text = "stock";
-			// 
-			// textBox5
-			// 
-			this.textBox5.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox5.ForeColor = System.Drawing.Color.Silver;
-			this.textBox5.Location = new System.Drawing.Point(7, 83);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(304, 31);
-			this.textBox5.TabIndex = 24;
-			this.textBox5.Text = "Product Name";
-			// 
-			// textBox6
-			// 
-			this.textBox6.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.textBox6.ForeColor = System.Drawing.Color.Silver;
-			this.textBox6.Location = new System.Drawing.Point(132, 46);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(178, 31);
-			this.textBox6.TabIndex = 25;
-			this.textBox6.Text = "code";
-			// 
-			// dateTimePicker1
-			// 
-			this.dateTimePicker1.Location = new System.Drawing.Point(93, 135);
-			this.dateTimePicker1.Name = "dateTimePicker1";
-			this.dateTimePicker1.Size = new System.Drawing.Size(217, 27);
-			this.dateTimePicker1.TabIndex = 26;
-			// 
-			// comboBox1
-			// 
-			this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-			this.comboBox1.ForeColor = System.Drawing.Color.Silver;
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
-            "Available",
-            "Unavailable"});
-			this.comboBox1.Location = new System.Drawing.Point(6, 229);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(303, 30);
-			this.comboBox1.TabIndex = 27;
-			this.comboBox1.Text = "State";
+			this.txtid.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtid.ForeColor = System.Drawing.Color.Silver;
+			this.txtid.Location = new System.Drawing.Point(6, 46);
+			this.txtid.Name = "txtid";
+			this.txtid.Size = new System.Drawing.Size(109, 31);
+			this.txtid.TabIndex = 15;
+			this.txtid.Text = "ID";
 			// 
 			// ProductoVista
 			// 
@@ -312,13 +313,13 @@
 		private System.Windows.Forms.DataGridView gvproducts;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button btnsave;
+		private System.Windows.Forms.TextBox txtid;
+		private System.Windows.Forms.DateTimePicker dtpexpired;
+		private System.Windows.Forms.TextBox txtcode;
+		private System.Windows.Forms.TextBox txtname;
+		private System.Windows.Forms.TextBox txtstock;
 		private System.Windows.Forms.TextBox txtdescription;
-		private System.Windows.Forms.DateTimePicker dateTimePicker1;
-		private System.Windows.Forms.TextBox textBox6;
-		private System.Windows.Forms.TextBox textBox5;
-		private System.Windows.Forms.TextBox textBox4;
-		private System.Windows.Forms.TextBox textBox2;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.TextBox txtcategory;
+		private System.Windows.Forms.ComboBox cbstate;
 	}
 }
