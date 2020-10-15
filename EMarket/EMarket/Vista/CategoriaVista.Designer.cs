@@ -210,6 +210,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "CategoriaVista";
             this.Text = "CategoriaVista";
+            this.Load += new System.EventHandler(this.CategoriaVista_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gvproducts)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -29,11 +29,18 @@ namespace EMarket.Vista
         private void btnsave_Click(object sender, EventArgs e)
         {
             string id,  Cname, Cestado;
-            id = textidc.Text;
-            Cname = txtdescription.Text;
-            Cestado = cmbState.Text;
-            
-            gvproducts.DataSource = categoriaM.Mostrar(id,  Cname, Cestado);
+            if (textidc.Text == "ID" || txtdescription.Text == "Description" || cmbState.Text == "State")
+            {
+                MessageBox.Show("Fill empty fields");
+            }
+            else
+            {
+                id = textidc.Text;
+                Cname = txtdescription.Text;
+                Cestado = cmbState.Text;
+
+                gvproducts.DataSource = categoriaM.Mostrar(id, Cname, Cestado);
+            }
         }
 
         private void btnupdate_Click(object sender, EventArgs e)
@@ -114,6 +121,11 @@ namespace EMarket.Vista
                 cmbState.Text = "State";
                 cmbState.ForeColor = Color.Silver;
             }
+        }
+
+        private void CategoriaVista_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

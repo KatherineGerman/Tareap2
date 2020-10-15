@@ -32,18 +32,24 @@ namespace EMarket.Vista
 
 		private void btnsave_Click(object sender, EventArgs e)
 		{
-			string id, code, name, stock, category, expired, state, description;
-			id = txtid.Text;
-			code = txtcode.Text;
-			name = txtname.Text;
-			stock = txtstock.Text;
-			category = txtcategory.Text;
-			expired = txtexpired.Text;
-			state = cmbState.Text;
-			description = txtdescription.Text;
+			if (txtid.Text == "ID" || txtcode.Text == "code" || txtname.Text == "Product Name" || txtstock.Text == "stock" || txtcategory.Text == "Category" || txtexpired.Text == "expired" || cmbState.Text == "State" || txtdescription.Text == "Description")
+			{
+				MessageBox.Show("Fill empty fields");
+			}
+			else
+			{
+				string id, code, name, stock, category, expired, state, description;
+				id = txtid.Text;
+				code = txtcode.Text;
+				name = txtname.Text;
+				stock = txtstock.Text;
+				category = txtcategory.Text;
+				expired = txtexpired.Text;
+				state = cmbState.Text;
+				description = txtdescription.Text;
 
-			gvproducts.DataSource = productoP.Mostrar(id,code,name,stock,expired,category,state,description);
-			
+				gvproducts.DataSource = productoP.Mostrar(id, code, name, stock, expired, category, state, description);
+			}
 		}
 
         private void btnupdate_Click(object sender, EventArgs e)
