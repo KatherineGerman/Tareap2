@@ -74,5 +74,19 @@ namespace EMarket.Vista
 			else
 				MessageBox.Show("Plase, select a row to delete");
 		}
+
+        private void txtsearch_KeyUp(object sender, KeyEventArgs e)
+        {
+			foreach (DataGridViewRow Row in gvproducts.Rows)
+			{
+				String strFila = Row.Index.ToString();
+				string valor = Convert.ToString(Row.Cells["code"].Value);
+
+				if (valor == this.txtsearch.Text)
+				{
+					gvproducts.Rows[Convert.ToInt32(strFila)].DefaultCellStyle.BackColor = Color.Green;
+				}
+			}
+		}
     }
 }

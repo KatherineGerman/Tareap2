@@ -135,6 +135,7 @@
             this.txtsearch.Size = new System.Drawing.Size(582, 31);
             this.txtsearch.TabIndex = 33;
             this.txtsearch.Text = "Search";
+            this.txtsearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtsearch_KeyUp);
             // 
             // label1
             // 
