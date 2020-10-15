@@ -32,12 +32,12 @@
             this.gvproducts = new System.Windows.Forms.DataGridView();
             this.txtdescription = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.textidc = new System.Windows.Forms.TextBox();
+            this.cmbState = new System.Windows.Forms.ComboBox();
             this.btnsave = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btndelete = new System.Windows.Forms.Button();
             this.btnupdate = new System.Windows.Forms.Button();
-            this.textidc = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gvproducts)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -73,13 +73,14 @@
             this.txtdescription.Size = new System.Drawing.Size(304, 29);
             this.txtdescription.TabIndex = 15;
             this.txtdescription.Text = "Category Name";
-            this.txtdescription.TextChanged += new System.EventHandler(this.txtdescription_TextChanged);
+            this.txtdescription.Enter += new System.EventHandler(this.txtdescription_Enter);
+            this.txtdescription.Leave += new System.EventHandler(this.txtdescription_Leave);
             // 
             // groupBox1
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.textidc);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.cmbState);
             this.groupBox1.Controls.Add(this.btnsave);
             this.groupBox1.Controls.Add(this.txtdescription);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -92,20 +93,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Categories registration";
             // 
-            // comboBox1
+            // textidc
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.comboBox1.ForeColor = System.Drawing.Color.Silver;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.textidc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textidc.ForeColor = System.Drawing.Color.Silver;
+            this.textidc.Location = new System.Drawing.Point(5, 43);
+            this.textidc.Name = "textidc";
+            this.textidc.Size = new System.Drawing.Size(304, 29);
+            this.textidc.TabIndex = 21;
+            this.textidc.Text = "ID";
+            this.textidc.Enter += new System.EventHandler(this.textidc_Enter);
+            this.textidc.Leave += new System.EventHandler(this.textidc_Leave);
+            // 
+            // cmbState
+            // 
+            this.cmbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cmbState.ForeColor = System.Drawing.Color.Silver;
+            this.cmbState.FormattingEnabled = true;
+            this.cmbState.Items.AddRange(new object[] {
             "Available",
             "Unavailable"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 132);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(303, 32);
-            this.comboBox1.TabIndex = 20;
-            this.comboBox1.Text = "State";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbState.Location = new System.Drawing.Point(6, 132);
+            this.cmbState.Name = "cmbState";
+            this.cmbState.Size = new System.Drawing.Size(303, 32);
+            this.cmbState.TabIndex = 20;
+            this.cmbState.Text = "State";
+            this.cmbState.Enter += new System.EventHandler(this.cmbState_Enter);
+            this.cmbState.Leave += new System.EventHandler(this.cmbState_Leave);
             // 
             // btnsave
             // 
@@ -182,17 +196,6 @@
             this.btnupdate.UseVisualStyleBackColor = true;
             this.btnupdate.Click += new System.EventHandler(this.btnupdate_Click);
             // 
-            // textidc
-            // 
-            this.textidc.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textidc.ForeColor = System.Drawing.Color.Silver;
-            this.textidc.Location = new System.Drawing.Point(5, 43);
-            this.textidc.Name = "textidc";
-            this.textidc.Size = new System.Drawing.Size(304, 29);
-            this.textidc.TabIndex = 21;
-            this.textidc.Text = "ID";
-            this.textidc.TextChanged += new System.EventHandler(this.textidc_TextChanged);
-            // 
             // CategoriaVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -225,7 +228,7 @@
 		private System.Windows.Forms.Button btnsave;
 		private System.Windows.Forms.TextBox txtdescription;
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.ComboBox comboBox1;
+		private System.Windows.Forms.ComboBox cmbState;
         private System.Windows.Forms.TextBox textidc;
     }
 }

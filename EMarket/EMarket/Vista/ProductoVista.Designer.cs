@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtexpired = new System.Windows.Forms.TextBox();
-            this.cbstate = new System.Windows.Forms.ComboBox();
+            this.cmbState = new System.Windows.Forms.ComboBox();
             this.txtcode = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtstock = new System.Windows.Forms.TextBox();
@@ -120,7 +120,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.txtexpired);
-            this.groupBox1.Controls.Add(this.cbstate);
+            this.groupBox1.Controls.Add(this.cmbState);
             this.groupBox1.Controls.Add(this.txtcode);
             this.groupBox1.Controls.Add(this.txtname);
             this.groupBox1.Controls.Add(this.txtstock);
@@ -147,21 +147,24 @@
             this.txtexpired.Size = new System.Drawing.Size(207, 29);
             this.txtexpired.TabIndex = 28;
             this.txtexpired.Text = "expired";
+            this.txtexpired.Enter += new System.EventHandler(this.txtexpired_Enter);
+            this.txtexpired.Leave += new System.EventHandler(this.txtexpired_Leave);
             // 
-            // cbstate
+            // cmbState
             // 
-            this.cbstate.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.cbstate.ForeColor = System.Drawing.Color.Silver;
-            this.cbstate.FormattingEnabled = true;
-            this.cbstate.Items.AddRange(new object[] {
+            this.cmbState.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
+            this.cmbState.ForeColor = System.Drawing.Color.Silver;
+            this.cmbState.FormattingEnabled = true;
+            this.cmbState.Items.AddRange(new object[] {
             "Available",
             "Unavailable"});
-            this.cbstate.Location = new System.Drawing.Point(6, 229);
-            this.cbstate.Name = "cbstate";
-            this.cbstate.Size = new System.Drawing.Size(303, 32);
-            this.cbstate.TabIndex = 27;
-            this.cbstate.Text = "State";
-            this.cbstate.SelectedIndexChanged += new System.EventHandler(this.cbstate_SelectedIndexChanged);
+            this.cmbState.Location = new System.Drawing.Point(6, 229);
+            this.cmbState.Name = "cmbState";
+            this.cmbState.Size = new System.Drawing.Size(303, 32);
+            this.cmbState.TabIndex = 27;
+            this.cmbState.Text = "State";
+            this.cmbState.Enter += new System.EventHandler(this.cmbState_Enter);
+            this.cmbState.Leave += new System.EventHandler(this.cmbState_Leave);
             // 
             // txtcode
             // 
@@ -172,7 +175,8 @@
             this.txtcode.Size = new System.Drawing.Size(178, 29);
             this.txtcode.TabIndex = 25;
             this.txtcode.Text = "code";
-            this.txtcode.TextChanged += new System.EventHandler(this.txtcode_TextChanged);
+            this.txtcode.Enter += new System.EventHandler(this.txtcode_Enter);
+            this.txtcode.Leave += new System.EventHandler(this.txtcode_Leave);
             // 
             // txtname
             // 
@@ -183,6 +187,8 @@
             this.txtname.Size = new System.Drawing.Size(304, 29);
             this.txtname.TabIndex = 24;
             this.txtname.Text = "Product Name";
+            this.txtname.Enter += new System.EventHandler(this.txtname_Enter);
+            this.txtname.Leave += new System.EventHandler(this.txtname_Leave);
             // 
             // txtstock
             // 
@@ -193,6 +199,8 @@
             this.txtstock.Size = new System.Drawing.Size(80, 29);
             this.txtstock.TabIndex = 23;
             this.txtstock.Text = "stock";
+            this.txtstock.Enter += new System.EventHandler(this.txtstock_Enter);
+            this.txtstock.Leave += new System.EventHandler(this.txtstock_Leave);
             // 
             // txtdescription
             // 
@@ -204,6 +212,8 @@
             this.txtdescription.Size = new System.Drawing.Size(304, 80);
             this.txtdescription.TabIndex = 21;
             this.txtdescription.Text = "Description";
+            this.txtdescription.Enter += new System.EventHandler(this.txtdescription_Enter);
+            this.txtdescription.Leave += new System.EventHandler(this.txtdescription_Leave);
             // 
             // txtcategory
             // 
@@ -214,6 +224,8 @@
             this.txtcategory.Size = new System.Drawing.Size(304, 29);
             this.txtcategory.TabIndex = 20;
             this.txtcategory.Text = "Category";
+            this.txtcategory.Enter += new System.EventHandler(this.txtcategory_Enter);
+            this.txtcategory.Leave += new System.EventHandler(this.txtcategory_Leave);
             // 
             // btnsave
             // 
@@ -242,6 +254,8 @@
             this.txtid.Size = new System.Drawing.Size(109, 29);
             this.txtid.TabIndex = 15;
             this.txtid.Text = "ID";
+            this.txtid.Enter += new System.EventHandler(this.txtid_Enter);
+            this.txtid.Leave += new System.EventHandler(this.txtid_Leave);
             // 
             // gvproducts
             // 
@@ -288,7 +302,7 @@
 		private System.Windows.Forms.TextBox txtstock;
 		private System.Windows.Forms.TextBox txtdescription;
 		private System.Windows.Forms.TextBox txtcategory;
-		private System.Windows.Forms.ComboBox cbstate;
+		private System.Windows.Forms.ComboBox cmbState;
         private System.Windows.Forms.DataGridView gvproducts;
         private System.Windows.Forms.TextBox txtexpired;
     }

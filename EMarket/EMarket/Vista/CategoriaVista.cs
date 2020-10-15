@@ -31,7 +31,7 @@ namespace EMarket.Vista
             string id,  Cname, Cestado;
             id = textidc.Text;
             Cname = txtdescription.Text;
-            Cestado = comboBox1.Text;
+            Cestado = cmbState.Text;
             
             gvproducts.DataSource = categoriaM.Mostrar(id,  Cname, Cestado);
         }
@@ -43,23 +43,13 @@ namespace EMarket.Vista
 
                 textidc.Text = gvproducts.CurrentRow.Cells[0].Value.ToString();
                 txtdescription.Text = gvproducts.CurrentRow.Cells[1].Value.ToString();
-                comboBox1.Text = gvproducts.CurrentRow.Cells[2].Value.ToString();
+                cmbState.Text = gvproducts.CurrentRow.Cells[2].Value.ToString();
                 gvproducts.Rows.RemoveAt(this.gvproducts.SelectedRows[0].Index);
 
 
             }
             else
                 MessageBox.Show("Please, select a row to edit");
-        }
-
-        private void txtdescription_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void btndelete_Click(object sender, EventArgs e)
@@ -72,9 +62,58 @@ namespace EMarket.Vista
                 MessageBox.Show("Please, select a row to delete");
         }
 
-        private void textidc_TextChanged(object sender, EventArgs e)
+        private void textidc_Enter(object sender, EventArgs e)
         {
+            if (textidc.Text == "ID")
+            {
+                textidc.Text = "";
+                textidc.ForeColor = Color.Black;
+            }
+        }
 
+        private void textidc_Leave(object sender, EventArgs e)
+        {
+            if (textidc.Text == "")
+            {
+                textidc.Text = "ID";
+                textidc.ForeColor = Color.Silver;
+            }
+        }
+
+        private void txtdescription_Enter(object sender, EventArgs e)
+        {
+            if (txtdescription.Text == "Category Name")
+            {
+                txtdescription.Text = "";
+                txtdescription.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtdescription_Leave(object sender, EventArgs e)
+        {
+            if (txtdescription.Text == "")
+            {
+                txtdescription.Text = "Category Name";
+                txtdescription.ForeColor = Color.Silver;
+            }
+        }
+
+        private void cmbState_Enter(object sender, EventArgs e)
+        {
+            if(cmbState.Text == "State")
+            {
+                cmbState.Text = "";
+                cmbState.ForeColor = Color.Black;
+            }
+        }
+
+        private void cmbState_Leave(object sender, EventArgs e)
+        {
+            if (cmbState.Text == "")
+            {
+                cmbState.Text = "State";
+                cmbState.ForeColor = Color.Silver;
+            }
         }
     }
 }
