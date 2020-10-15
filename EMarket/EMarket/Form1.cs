@@ -11,15 +11,16 @@ using EMarket.Vista;
 using System.Runtime.InteropServices;
 
 using EMarket.Controlador;
+using Negocio;
 
 namespace EMarket
 {
     public partial class Form1 : Form
     {
-        
-        
-            
-        
+
+        private ProductoControlador productoP = new ProductoControlador();
+
+
         public Form1()
         {
             InitializeComponent();
@@ -94,5 +95,18 @@ namespace EMarket
         {
 
         }
-	}
+
+        private void update_Tick(object sender, EventArgs e)
+        {
+            if (SharedVar.id != "")
+            {
+                gvmain.DataSource = productoP.Mostrar(SharedVar.id, SharedVar.code, SharedVar.name, SharedVar.stock, SharedVar.expired, SharedVar.category, SharedVar.state, SharedVar.description);
+
+                SharedVar.id = "";
+            }
+            
+            
+
+        }
+    }
 }

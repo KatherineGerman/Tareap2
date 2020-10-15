@@ -15,18 +15,18 @@ namespace EMarket.Modelo
         private bool columnas = false;
 
         // columnas de la tabla
-        DataColumn idc = new DataColumn("ID", typeof(string));
-        DataColumn namec = new DataColumn("Name", typeof(string));
-        DataColumn estadoc = new DataColumn("Estado", typeof(string));
+        DataColumn idt = new DataColumn("ID", typeof(string));
+        DataColumn namet = new DataColumn("Name", typeof(string));
+        DataColumn estadot = new DataColumn("Estado", typeof(string));
 
         //Listar Los productos
         public DataTable ListProduct(string idC, string nameC, string estadoC)
         {
             if (columnas == false)
             {
-                tablac.Columns.Add(idC);
-                tablac.Columns.Add(nameC);
-                tablac.Columns.Add(estadoC);
+                tablac.Columns.Add(idt);
+                tablac.Columns.Add(namet);
+                tablac.Columns.Add(estadot);
                
 
                 columnas = true;

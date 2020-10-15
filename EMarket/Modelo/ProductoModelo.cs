@@ -54,14 +54,14 @@ namespace EMarket.Modelo
         {
             if (columnas==false)
             {
-                tabla.Columns.Add(id);
-                tabla.Columns.Add(code);
-                tabla.Columns.Add(name);
-                tabla.Columns.Add(stock);
-                tabla.Columns.Add(expired);
-                tabla.Columns.Add(category);
-                tabla.Columns.Add(state);
-                tabla.Columns.Add(description);
+                tabla.Columns.Add(idt);
+                tabla.Columns.Add(codet);
+                tabla.Columns.Add(namet);
+                tabla.Columns.Add(stockt);
+                tabla.Columns.Add(expiredt);
+                tabla.Columns.Add(categoryt);
+                tabla.Columns.Add(statet);
+                tabla.Columns.Add(descriptiont);
 
                 columnas = true;
             }

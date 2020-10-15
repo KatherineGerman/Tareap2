@@ -35,7 +35,8 @@
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.cbstate = new System.Windows.Forms.ComboBox();
+            this.txtexpired = new System.Windows.Forms.TextBox();
+            this.cmbState = new System.Windows.Forms.ComboBox();
             this.txtcode = new System.Windows.Forms.TextBox();
             this.txtname = new System.Windows.Forms.TextBox();
             this.txtstock = new System.Windows.Forms.TextBox();
@@ -44,7 +45,6 @@
             this.btnsave = new System.Windows.Forms.Button();
             this.txtid = new System.Windows.Forms.TextBox();
             this.gvproducts = new System.Windows.Forms.DataGridView();
-            this.txtexpired = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gvproducts)).BeginInit();
             this.SuspendLayout();
@@ -153,7 +153,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.txtexpired);
-            this.groupBox1.Controls.Add(this.cbstate);
+            this.groupBox1.Controls.Add(this.cmbState);
             this.groupBox1.Controls.Add(this.txtcode);
             this.groupBox1.Controls.Add(this.txtname);
             this.groupBox1.Controls.Add(this.txtstock);
@@ -171,19 +171,29 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Products registration";
             // 
-            // cbstate
+            // txtexpired
             // 
-            this.cbstate.Font = new System.Drawing.Font("Century Gothic", 14.25F);
-            this.cbstate.ForeColor = System.Drawing.Color.Silver;
-            this.cbstate.FormattingEnabled = true;
-            this.cbstate.Items.AddRange(new object[] {
+            this.txtexpired.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtexpired.ForeColor = System.Drawing.Color.Silver;
+            this.txtexpired.Location = new System.Drawing.Point(102, 131);
+            this.txtexpired.Name = "txtexpired";
+            this.txtexpired.Size = new System.Drawing.Size(207, 31);
+            this.txtexpired.TabIndex = 28;
+            this.txtexpired.Text = "expired";
+            // 
+            // cmbState
+            // 
+            this.cmbState.Font = new System.Drawing.Font("Century Gothic", 14.25F);
+            this.cmbState.ForeColor = System.Drawing.Color.Silver;
+            this.cmbState.FormattingEnabled = true;
+            this.cmbState.Items.AddRange(new object[] {
             "Available",
             "Unavailable"});
-            this.cbstate.Location = new System.Drawing.Point(6, 229);
-            this.cbstate.Name = "cbstate";
-            this.cbstate.Size = new System.Drawing.Size(303, 30);
-            this.cbstate.TabIndex = 27;
-            this.cbstate.Text = "State";
+            this.cmbState.Location = new System.Drawing.Point(6, 229);
+            this.cmbState.Name = "cmbState";
+            this.cmbState.Size = new System.Drawing.Size(303, 30);
+            this.cmbState.TabIndex = 27;
+            this.cmbState.Text = "State";
             // 
             // txtcode
             // 
@@ -275,16 +285,6 @@
             this.gvproducts.Size = new System.Drawing.Size(642, 330);
             this.gvproducts.TabIndex = 31;
             // 
-            // txtexpired
-            // 
-            this.txtexpired.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtexpired.ForeColor = System.Drawing.Color.Silver;
-            this.txtexpired.Location = new System.Drawing.Point(102, 131);
-            this.txtexpired.Name = "txtexpired";
-            this.txtexpired.Size = new System.Drawing.Size(207, 31);
-            this.txtexpired.TabIndex = 28;
-            this.txtexpired.Text = "expired";
-            // 
             // ProductoVista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -324,7 +324,7 @@
 		private System.Windows.Forms.TextBox txtstock;
 		private System.Windows.Forms.TextBox txtdescription;
 		private System.Windows.Forms.TextBox txtcategory;
-		private System.Windows.Forms.ComboBox cbstate;
+		private System.Windows.Forms.ComboBox cmbState;
         private System.Windows.Forms.DataGridView gvproducts;
         private System.Windows.Forms.TextBox txtexpired;
     }

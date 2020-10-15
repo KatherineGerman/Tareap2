@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EMarket.Controlador;
+using Negocio;
 
 namespace EMarket.Vista
 {
@@ -15,6 +16,7 @@ namespace EMarket.Vista
     {
 
 		private ProductoControlador productoP = new ProductoControlador();
+		
         public ProductoVista()
         {
             InitializeComponent();
@@ -49,6 +51,23 @@ namespace EMarket.Vista
 				description = txtdescription.Text;
 
 				gvproducts.DataSource = productoP.Mostrar(id, code, name, stock, expired, category, state, description);
+
+				//Aqui se toman las variables de la clase SharedVar y se les agregan los valores de los texbox para llevarlos a la capa principal
+				SharedVar.id = txtid.Text;
+				SharedVar.code = txtcode.Text;
+				SharedVar.name = txtname.Text;
+				SharedVar.stock = txtstock.Text;
+				SharedVar.expired = txtexpired.Text;
+				SharedVar.category = txtcategory.Text;
+				SharedVar.state = cmbState.Text;
+				SharedVar.description = txtdescription.Text;
+
+				
+
+
+
+
+
 			}
 		}
 
