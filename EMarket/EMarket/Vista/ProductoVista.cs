@@ -101,150 +101,6 @@ namespace EMarket.Vista
 				MessageBox.Show("Please, select a row to delete");
 		}
 
-        private void txtid_Enter(object sender, EventArgs e)
-        {
-			if(txtid.Text == "ID")
-            {
-				txtid.Text = "";
-				txtid.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtid_Leave(object sender, EventArgs e)
-        {
-			if (txtid.Text == "")
-			{
-				txtid.Text = "ID";
-				txtid.ForeColor = Color.Silver;
-			}
-		}
-
-        private void txtcode_Enter(object sender, EventArgs e)
-        {
-			if(txtcode.Text == "code")
-            {
-				txtcode.Text = "";
-				txtcode.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtcode_Leave(object sender, EventArgs e)
-        {
-			if (txtcode.Text == "")
-			{
-				txtcode.Text = "code";
-				txtcode.ForeColor = Color.Silver;
-			}
-		}
-
-        private void txtname_Enter(object sender, EventArgs e)
-        {
-			if(txtname.Text == "Product Name")
-            {
-				txtname.Text = "";
-				txtname.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtname_Leave(object sender, EventArgs e)
-        {
-			if (txtname.Text == "")
-			{
-				txtname.Text = "Product Name";
-				txtname.ForeColor = Color.Silver;
-			}
-		}
-
-        private void txtstock_Enter(object sender, EventArgs e)
-        {
-			if(txtstock.Text == "stock")
-            {
-				txtstock.Text = "";
-				txtstock.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtstock_Leave(object sender, EventArgs e)
-        {
-			if (txtstock.Text == "")
-			{
-				txtstock.Text = "stock";
-				txtstock.ForeColor = Color.Silver;
-			}
-		}
-
-        private void txtexpired_Enter(object sender, EventArgs e)
-        {
-			if(txtexpired.Text == "expired")
-            {
-				txtexpired.Text = "";
-				txtexpired.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtexpired_Leave(object sender, EventArgs e)
-        {
-			if (txtexpired.Text == "")
-			{
-				txtexpired.Text = "expired";
-				txtexpired.ForeColor = Color.Silver;
-			}
-		}
-
-        private void txtcategory_Enter(object sender, EventArgs e)
-        {
-			if(txtcategory.Text == "Category")
-            {
-				txtcategory.Text = "";
-				txtcategory.ForeColor = Color.Black;
-            }
-		}
-
-        private void txtcategory_Leave(object sender, EventArgs e)
-        {
-			if (txtcategory.Text == "")
-			{
-				txtcategory.Text = "Category";
-				txtcategory.ForeColor = Color.Silver;
-			}
-		}
-
-        private void cmbState_Enter(object sender, EventArgs e)
-        {
-			if(cmbState.Text == "State")
-            {
-				cmbState.Text = "";
-				cmbState.ForeColor = Color.Black;
-            }
-        }
-
-        private void cmbState_Leave(object sender, EventArgs e)
-        {
-			if (cmbState.Text == "")
-			{
-				cmbState.Text = "State";
-				cmbState.ForeColor = Color.Silver;
-			}
-		}
-
-        private void txtdescription_Enter(object sender, EventArgs e)
-        {
-			if (txtdescription.Text == "Description")
-            {
-				txtdescription.Text = "";
-				txtdescription.ForeColor = Color.Black;
-            }
-        }
-
-        private void txtdescription_Leave(object sender, EventArgs e)
-        {
-			if (txtdescription.Text == "")
-			{
-				txtdescription.Text = "Description";
-				txtdescription.ForeColor = Color.Silver;
-			}
-		}
-
         private void txtsearch_KeyUp(object sender, KeyEventArgs e)
         {
 			foreach (DataGridViewRow Row in gvproducts.Rows)
@@ -258,5 +114,149 @@ namespace EMarket.Vista
 				}
 			}
 		}
-    }
+
+		private void txtid_Enter(object sender, EventArgs e)
+		{
+			if (txtid.Text == "ID")
+			{
+				txtid.Text = "";
+				txtid.ForeColor = Color.Black;
+			}
+		}
+
+		private void txtcode_Enter(object sender, EventArgs e)
+		{
+			if (txtcode.Text == "code")
+			{
+				txtcode.Text = "";
+				txtcode.ForeColor = Color.Black;
+			}
+		}
+
+		private void txtname_Enter(object sender, EventArgs e)
+		{
+			if (txtname.Text == "Product Name")
+			{
+				txtname.Text = "";
+				txtname.ForeColor = Color.Black;
+			}
+		}
+
+		private void txtstock_Enter(object sender, EventArgs e)
+		{
+			if (txtstock.Text == "stock")
+			{
+				txtstock.Text = "";
+				txtstock.ForeColor = Color.Black;
+			}
+		}
+
+		private void txtexpired_Enter(object sender, EventArgs e)
+		{
+			if (txtexpired.Text == "expired")
+			{
+				txtexpired.Text = "";
+				txtexpired.ForeColor = Color.Black;
+			}
+		}
+
+		private void txtcategory_Enter(object sender, EventArgs e)
+		{
+			if (txtcategory.Text == "Category")
+			{
+				txtcategory.Text = "";
+				txtcategory.ForeColor = Color.Black;
+			}
+		}
+
+		private void cmbState_Enter(object sender, EventArgs e)
+		{
+			if (cmbState.Text == "State")
+			{
+				cmbState.Text = "";
+				cmbState.ForeColor = Color.Black;
+			}
+		}
+
+		private void txtdescription_Enter(object sender, EventArgs e)
+		{
+			if (txtdescription.Text == "Description")
+			{
+				txtdescription.Text = "";
+				txtdescription.ForeColor = Color.Black;
+			}
+		}
+
+		private void txtid_Leave(object sender, EventArgs e)
+		{
+			if (txtid.Text == "")
+			{
+				txtid.Text = "ID";
+				txtid.ForeColor = Color.Silver;
+			}
+		}
+
+		private void txtcode_Leave(object sender, EventArgs e)
+		{
+			if (txtcode.Text == "")
+			{
+				txtcode.Text = "code";
+				txtcode.ForeColor = Color.Silver;
+			}
+		}
+
+		private void txtname_Leave(object sender, EventArgs e)
+		{
+			if (txtname.Text == "")
+			{
+				txtname.Text = "Product Name";
+				txtname.ForeColor = Color.Silver;
+			}
+		}
+
+		private void txtstock_Leave(object sender, EventArgs e)
+		{
+			if (txtstock.Text == "")
+			{
+				txtstock.Text = "stock";
+				txtstock.ForeColor = Color.Silver;
+			}
+		}
+
+		private void txtexpired_Leave(object sender, EventArgs e)
+		{
+			if (txtexpired.Text == "")
+			{
+				txtexpired.Text = "expired";
+				txtexpired.ForeColor = Color.Silver;
+			}
+		}
+
+		private void txtcategory_Leave(object sender, EventArgs e)
+		{
+			if (txtcategory.Text == "")
+			{
+				txtcategory.Text = "Category";
+				txtcategory.ForeColor = Color.Silver;
+			}
+		}
+
+		private void cmbState_Leave(object sender, EventArgs e)
+		{
+			if (cmbState.Text == "")
+			{
+				cmbState.Text = "State";
+				cmbState.ForeColor = Color.Silver;
+			}
+		}
+
+		private void txtdescription_Leave(object sender, EventArgs e)
+		{
+			if (txtdescription.Text == "")
+			{
+				txtdescription.Text = "Description";
+				txtdescription.ForeColor = Color.Silver;
+			}
+		}
+	}
 }

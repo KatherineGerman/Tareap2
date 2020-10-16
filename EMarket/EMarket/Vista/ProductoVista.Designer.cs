@@ -180,6 +180,8 @@
             this.txtexpired.Size = new System.Drawing.Size(207, 31);
             this.txtexpired.TabIndex = 28;
             this.txtexpired.Text = "expired";
+            this.txtexpired.Enter += new System.EventHandler(this.txtexpired_Enter);
+            this.txtexpired.Leave += new System.EventHandler(this.txtexpired_Leave);
             // 
             // cmbState
             // 
@@ -194,6 +196,8 @@
             this.cmbState.Size = new System.Drawing.Size(303, 30);
             this.cmbState.TabIndex = 27;
             this.cmbState.Text = "State";
+            this.cmbState.Enter += new System.EventHandler(this.cmbState_Enter);
+            this.cmbState.Leave += new System.EventHandler(this.cmbState_Leave);
             // 
             // txtcode
             // 
@@ -204,6 +208,8 @@
             this.txtcode.Size = new System.Drawing.Size(178, 31);
             this.txtcode.TabIndex = 25;
             this.txtcode.Text = "code";
+            this.txtcode.Enter += new System.EventHandler(this.txtcode_Enter);
+            this.txtcode.Leave += new System.EventHandler(this.txtcode_Leave);
             // 
             // txtname
             // 
@@ -214,6 +220,8 @@
             this.txtname.Size = new System.Drawing.Size(304, 31);
             this.txtname.TabIndex = 24;
             this.txtname.Text = "Product Name";
+            this.txtname.Enter += new System.EventHandler(this.txtname_Enter);
+            this.txtname.Leave += new System.EventHandler(this.txtname_Leave);
             // 
             // txtstock
             // 
@@ -224,6 +232,8 @@
             this.txtstock.Size = new System.Drawing.Size(80, 31);
             this.txtstock.TabIndex = 23;
             this.txtstock.Text = "stock";
+            this.txtstock.Enter += new System.EventHandler(this.txtstock_Enter);
+            this.txtstock.Leave += new System.EventHandler(this.txtstock_Leave);
             // 
             // txtdescription
             // 
@@ -235,6 +245,8 @@
             this.txtdescription.Size = new System.Drawing.Size(304, 80);
             this.txtdescription.TabIndex = 21;
             this.txtdescription.Text = "Description";
+            this.txtdescription.Enter += new System.EventHandler(this.txtdescription_Enter);
+            this.txtdescription.Leave += new System.EventHandler(this.txtdescription_Leave);
             // 
             // txtcategory
             // 
@@ -245,6 +257,8 @@
             this.txtcategory.Size = new System.Drawing.Size(304, 31);
             this.txtcategory.TabIndex = 20;
             this.txtcategory.Text = "Category";
+            this.txtcategory.Enter += new System.EventHandler(this.txtcategory_Enter);
+            this.txtcategory.Leave += new System.EventHandler(this.txtcategory_Leave);
             // 
             // btnsave
             // 
@@ -273,6 +287,8 @@
             this.txtid.Size = new System.Drawing.Size(109, 31);
             this.txtid.TabIndex = 15;
             this.txtid.Text = "ID";
+            this.txtid.Enter += new System.EventHandler(this.txtid_Enter);
+            this.txtid.Leave += new System.EventHandler(this.txtid_Leave);
             // 
             // gvproducts
             // 
